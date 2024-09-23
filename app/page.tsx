@@ -1,7 +1,7 @@
 // app/page.tsx
-import { Recommendation } from "./recommendation";
+import { Recommendation } from "./components/recommendation";
 import { fetchMovies } from "./api";
-import { Hero } from "./hero";
+import { Hero } from "./components/hero";
 
 // Page Component
 export default async function Home() {
@@ -12,8 +12,7 @@ export default async function Home() {
     genres: [28, 35, 878],
   };
   return (
-    <div className="bg-black text-white font-custom">
-      <h1 className="font-medium text-3xl p-3 tracking-wide">MOVAR</h1>
+    <div className="bg-black text-white font-custom px-8">
       <Hero />
       <Recommendation likedMovies={likedMovies} allMovies={allMovies} />
     </div>
