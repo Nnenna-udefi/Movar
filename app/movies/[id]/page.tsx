@@ -3,6 +3,7 @@
 import { Breadcrumbs } from "@/app/components/breadcrumbs";
 import { MovieDesc } from "@/app/components/movieDesc";
 import { Nav } from "@/app/components/nav";
+import { LoadingSpinner } from "@/app/components/ui/loadingSpinner";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
@@ -23,8 +24,13 @@ const MovieDetailsPage = () => {
   }, [id]);
 
   if (!movie) {
-    return <div className="text-center grid-cols-1 m-auto">Loading...</div>;
+    return (
+      <div className="grid h-screen place-items-center">
+        <LoadingSpinner />
+      </div>
+    );
   }
+
   return (
     <div className="px-8 text-white bg-black my-4 h-screen font-custom">
       <div>

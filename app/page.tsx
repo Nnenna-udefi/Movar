@@ -1,11 +1,8 @@
-// app/page.tsx
 import { Recommendation } from "./components/recommendation";
 import { fetchMovies } from "./api";
 import { Hero } from "./components/hero";
 
-// Page Component
 export default async function Home() {
-  // Fetch movies using the helper function
   const allMovies = await fetchMovies();
 
   const likedMovies = {
