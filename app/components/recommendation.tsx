@@ -30,7 +30,7 @@ export const Recommendation: React.FC<RecommendationProps> = ({
   return (
     <div className="mt-16 mx-4 mb-6">
       <h2>Top Picks</h2>
-      <div className="grid md:grid-cols-5 gap-3 sm:grid-cols-2 grid-cols-1">
+      <div className="grid md:grid-cols-4 gap-3 sm:grid-cols-2 grid-cols-1">
         {recommendedMovies.map((movie) => (
           <MovieCard key={movie.id} {...movie} />
         ))}

@@ -17,7 +17,7 @@ export const Hero = () => {
   return (
     <div>
       <Nav />
-      <div className="block md:flex gap-4 items-center">
+      <div className="block lg:flex gap-4 items-center">
         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
 
         <div className="relative z-10 pt-32 h-[500px] gap-4 w-full">
