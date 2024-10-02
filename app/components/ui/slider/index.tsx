@@ -104,10 +104,7 @@ const SliderShow = () => {
           >
             {filteredImages.map((image) => (
               <div key={image.id} className="w-full flex-shrink-0">
-                <Link
-                  href={`/`}
-                  className="w-full border border-3px border-gray-400"
-                >
+                <Link href={`/`} className="w-full ">
                   <div className=" ">
                     <Image
                       src={image.img}

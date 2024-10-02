@@ -1,6 +1,7 @@
 "use client";
 
 import { Breadcrumbs } from "@/app/components/breadcrumbs";
+import { Footer } from "@/app/components/footer";
 import { MovieDesc } from "@/app/components/movieDesc";
 import { Nav } from "@/app/components/nav";
 import { LoadingSpinner } from "@/app/components/ui/loadingSpinner";
@@ -32,7 +33,7 @@ const MovieDetailsPage = () => {
   }
 
   return (
-    <div className="px-8 text-white bg-black my-4 h-screen font-custom">
+    <div className="px-8 text-white bg-black py-4 min-h-screen font-custom">
       <div>
         <Nav />
       </div>
@@ -47,6 +48,7 @@ const MovieDetailsPage = () => {
         genres={movie.genres || []}
         imdb_id={movie.imdb_id}
       />
+      <Footer />
     </div>
   );
 };

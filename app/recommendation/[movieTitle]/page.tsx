@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { Nav } from "@/app/components/nav";
 import { MovieCard } from "@/app/components/movieCard";
 import { LoadingSpinner } from "@/app/components/ui/loadingSpinner";
+import { Footer } from "@/app/components/footer";
 
 const RecommendationPage = () => {
   const { movieTitle } = useParams();
@@ -32,7 +33,7 @@ const RecommendationPage = () => {
     }
   };
   return (
-    <div className="px-8 py-4 bg-black h-screen text-white">
+    <div className="px-8 py-4 bg-black min-h-screen text-white">
       <Nav />
       <div className="mt-6">
         {isLoading ? (
@@ -48,7 +49,7 @@ const RecommendationPage = () => {
               Since you liked &#34;{title}&#34;, here are similar movies you
               might enjoy.
             </h2>
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 gird-cols-1 gap-4 items-center mt-8">
+            <div className="grid md:grid-cols-3 bg-black sm:grid-cols-2 gird-cols-1 gap-4 items-center mt-8">
               {movies.length > 0 ? (
                 movies.map((movie) => <MovieCard key={movie.id} {...movie} />)
               ) : (
@@ -60,6 +61,7 @@ const RecommendationPage = () => {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

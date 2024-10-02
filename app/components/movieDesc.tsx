@@ -29,7 +29,7 @@ export const MovieDesc = ({
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full block md:flex p-3 my-2 gap-4"
+      className="w-full block bg-black md:flex p-3 my-2 gap-4"
     >
       <Image
         src={`https://image.tmdb.org/t/p/w500${poster_path}`}

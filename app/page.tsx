@@ -1,6 +1,7 @@
 import { Recommendation } from "./components/recommendation";
 import { fetchMovies } from "./api";
 import { Hero } from "./components/hero";
+import { Footer } from "./components/footer";
 
 export default async function Home() {
   const allMovies = await fetchMovies();
@@ -12,6 +13,7 @@ export default async function Home() {
     <div className="bg-black text-white font-sans px-8">
       <Hero />
       <Recommendation likedMovies={likedMovies} allMovies={allMovies} />
+      <Footer />
     </div>
   );
 }
