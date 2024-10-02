@@ -37,7 +37,7 @@ export const Hero = () => {
           />
         </div>
 
-        <div className="">
+        <div className="mt-4 md:mt-0">
           <SliderShow />
         </div>
       </div>
