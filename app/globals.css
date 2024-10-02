@@ -3,29 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400; /* Adjust for different weights */
-    font-display: swap;
-    src: url(/fonts/Roboto-Regular.ttf) format("truetype");
-  }
-
-  @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(/fonts/Roboto-Medium.ttf) format("truetype");
-  }
-
-  @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(/fonts/Roboto-Bold.ttf) format("truetype");
-  }
 }
 
 :root {
@@ -40,6 +17,9 @@
   }
 }
 
+.hide-scrollbar {
+  scrollbar-width: none;
+}
 body {
   color: var(--foreground);
   background: var(--background);

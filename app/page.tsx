@@ -9,7 +9,7 @@ export default async function Home() {
     genres: [28, 35, 878],
   };
   return (
-    <div className="bg-black text-white font-custom px-8">
+    <div className="bg-black text-white font-sans px-8">
       <Hero />
       <Recommendation likedMovies={likedMovies} allMovies={allMovies} />
     </div>

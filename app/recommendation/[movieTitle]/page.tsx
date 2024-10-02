@@ -48,7 +48,7 @@ const RecommendationPage = () => {
               Since you liked &#34;{title}&#34;, here are similar movies you
               might enjoy.
             </h2>
-            <div className="grid grid-cols-3 gap-4 items-center mt-8">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 gird-cols-1 gap-4 items-center mt-8">
               {movies.length > 0 ? (
                 movies.map((movie) => <MovieCard key={movie.id} {...movie} />)
               ) : (

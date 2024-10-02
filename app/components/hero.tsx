@@ -2,8 +2,7 @@
 import React, { useState } from "react";
 import { Nav } from "./nav";
 import { useRouter } from "next/navigation";
-import HeroImage from "@/app/images/captainAmerica.jpg";
-import Image from "next/image";
+import SliderShow from "./ui/slider";
 
 export const Hero = () => {
   const [query, setQuery] = useState("");
@@ -18,12 +17,12 @@ export const Hero = () => {
   return (
     <div>
       <Nav />
-      <div className="flex gap-4 items-center">
+      <div className="block md:flex gap-4 items-center">
         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
 
         <div className="relative z-10 pt-32 h-[500px] gap-4 w-full">
           <h2 className="text-5xl tracking-widest">Find Movies to watch</h2>
-          <p className="text-3xl py-8 w-3/4">
+          <p className="text-3xl py-8 md:w-3/4 w-full">
             Personalized suggestions discovered through the things you already
             love
           </p>
@@ -31,21 +30,15 @@ export const Hero = () => {
           <input
             type="text"
             placeholder="Search"
-            className="border rounded-md p-2  text-black bg-none w-1/2"
+            className="border rounded-md p-2  w-full text-black bg-none md:w-1/2"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleSearch}
           />
         </div>
 
-        <div>
-          <Image
-            src={HeroImage}
-            alt="hero image"
-            width={500}
-            height={500}
-            className="w-full"
-          />
+        <div className="">
+          <SliderShow />
         </div>
       </div>
     </div>

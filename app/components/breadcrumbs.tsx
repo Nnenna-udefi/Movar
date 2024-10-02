@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type BreadProps = {
@@ -7,7 +8,7 @@ type BreadProps = {
 export const Breadcrumbs = ({ id, title }: BreadProps) => {
   return (
     <div>
-      Home / Movies / {id} / {title}
+      <Link href="/">Home</Link> / Movies / {id} / {title}
     </div>
   );
 };

@@ -29,7 +29,7 @@ export const MovieDesc = ({
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full flex p-3 my-2 gap-4"
+      className="w-full block md:flex p-3 my-2 gap-4"
     >
       <Image
         src={`https://image.tmdb.org/t/p/w500${poster_path}`}
@@ -38,7 +38,7 @@ export const MovieDesc = ({
         height={200}
         className="w-[500px] h-[500px] "
       />
-      <div className="ml-6">
+      <div className="md:ml-6 mt-4">
         <h2 className="font-semibold text-2xl my-2">{title}</h2>
         <div className="flex gap-2 items-center">
           <p>Tagline:</p>

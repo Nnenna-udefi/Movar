@@ -19,7 +19,7 @@ export const MovieCard: React.FC<Movie> = ({ id, title, poster_path }) => {
           alt={title}
           width={300}
           height={200}
-          className="md:w-[200px] w-full h-[300px] "
+          className="w-[200px] h-[300px] "
         />
         <h3 className="font-semibold text-xl my-3">{title}</h3>
       </motion.div>
