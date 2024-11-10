@@ -32,8 +32,8 @@ const roboto = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Movar",
-  description: "Movie Recommendation Site",
+  title: "Home - Movar",
+  description: "A Movie Recommendation Site",
 };
 
 export default function RootLayout({

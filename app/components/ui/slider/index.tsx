@@ -10,7 +10,7 @@ import Bolt from "@/app/images/bolt.jpg";
 import Gremlins from "@/app/images/gremlins.jpg";
 import LoveLetter from "@/app/images/loveletter.jpg";
 import StrangerThings from "@/app/images/stranger-things.jpg";
-// import ToyStory from "@/app/images/toystory.jpg";
+
 
 const SliderShow = () => {
   const filteredImages = [
